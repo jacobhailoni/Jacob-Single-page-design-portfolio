@@ -1,0 +1,466 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #fff7f0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+/* logo */
+header img,
+footer img {
+  width: 48px;
+  height: 48px;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  width: 180px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff7f0;
+  text-decoration: none;
+  text-align: center;
+  background-color: #030303;
+  border-radius: 30px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: #030303;
+}
+
+article > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #7a746e;
+}
+
+.hero {
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.hero p {
+  margin: 0 30px;
+}
+/* grid */
+.grid {
+  display: grid;
+  grid-template-areas:
+    "graphic-design graphic-design"
+    "graphic-design graphic-design"
+    "ui-ux apps"
+    "illustration illustration"
+    "photography photography"
+    "motion motion";
+  grid-template-rows: repeat(6, 170px);
+  gap: 25px;
+  padding: 0 16px;
+  margin-bottom: 100px;
+}
+
+.grid div {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.grid img {
+  align-self: flex-end;
+}
+
+.grid p {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.graphic-design {
+  grid-area: graphic-design;
+  background-color: #755cde;
+}
+
+.ui-ux {
+  grid-area: ui-ux;
+  background-color: #f6a560;
+}
+
+.apps {
+  grid-area: apps;
+  background-color: #f39e9e;
+}
+
+.illustration {
+  grid-area: illustration;
+  background-color: #eb7565;
+}
+
+.photography {
+  grid-area: photography;
+  background-color: #61c4b7;
+}
+
+.motion {
+  grid-area: motion;
+  background-color: #552049;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  margin-bottom: 100px;
+}
+
+.about-me img {
+  margin-bottom: 40px;
+  width: 300px;
+  height: 300px;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  text-align: center;
+  color: #030303;
+}
+
+.about-me p {
+  margin-bottom: 24px;
+}
+
+.about-me a,
+.contact a {
+  margin: 0 auto;
+}
+
+.orange-btn {
+  background-color: #eb7565;
+}
+
+h3 {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #030303;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.image-carousel img {
+  width: 275px;
+  height: 180px;
+  transition: transform 0.75s;
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 100px;
+}
+
+button {
+  padding: 24px;
+  background-color: #030303;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 49px 24px 48px;
+  margin: 0 17px 40px 15px;
+  background: #030303;
+  border-radius: 10px;
+}
+
+.contact h2,
+.contact p {
+  color: #fff7f0;
+}
+
+.contact p {
+  margin-bottom: 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17px 32px 15px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  header {
+    padding: 34px 40px 0 39px;
+    margin-bottom: 64px;
+  }
+
+  header img,
+  footer img {
+    width: 64px;
+    height: 64px;
+  }
+
+  a {
+    padding: 14px 45px;
+    width: 228px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  h1 {
+    margin-bottom: 27px;
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  article > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero {
+    padding: 0 39.5px 0 38.5px;
+    margin-bottom: 64px;
+  }
+
+  .hero p {
+    margin: 0 58.5px;
+  }
+
+  .grid {
+    grid-template-areas:
+      "graphic-design graphic-design ui-ux apps"
+      "graphic-design graphic-design illustration illustration"
+      "photography photography motion motion";
+    grid-template-rows: repeat(3, 182px);
+    gap: 24px;
+    padding: 0 39px;
+    margin-bottom: 120px;
+  }
+
+  .about-me {
+    flex-direction: row;
+    gap: 69px;
+    padding: 0;
+    margin-bottom: 100px;
+    transform: translate(-44px);
+  }
+
+  .about-me img {
+    margin-bottom: 0;
+    width: 364px;
+    height: 364px;
+  }
+
+  .about-me article {
+    width: 339px;
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .about-me p {
+    text-align: left;
+  }
+
+  .about-me a {
+    margin: 0;
+  }
+
+  h3 {
+    margin-bottom: 56px;
+    font-size: 32px;
+    line-height: 40.32px;
+  }
+
+  .image-carousel {
+    gap: 30px;
+    margin-bottom: 56px;
+  }
+
+  .image-carousel img {
+    width: 540px;
+    height: 360px;
+  }
+
+  .slider-btns {
+    margin-bottom: 120px;
+  }
+
+  .contact {
+    padding: 56px 75px 64px;
+    margin: 0 39px 56px;
+    background: #030303;
+    border-radius: 10px;
+  }
+
+  .contact h2,
+  .contact p {
+    color: #fff7f0;
+    text-align: center;
+  }
+
+  .contact p {
+    margin-bottom: 26px;
+  }
+
+  footer {
+    padding: 0 40px 56px 39px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 34px 164px 0 165px;
+    margin-bottom: 66px;
+  }
+
+  a:hover {
+    background-color: #755cde;
+  }
+
+  .orange-btn:hover {
+    background-color: #f6a560;
+  }
+
+  .hero {
+    padding: 0 344px;
+  }
+
+  .hero p {
+    margin: 0 11px;
+  }
+
+  h1 {
+    margin-bottom: 23px;
+    font-size: 56px;
+    line-height: 70.56px;
+  }
+
+  .grid {
+    grid-template-areas:
+      "graphic-design graphic-design ui-ux apps photography photography"
+      "graphic-design graphic-design illustration illustration motion motion";
+
+    grid-template-rows: 182px 182px;
+    gap: 24px;
+    padding: 0 165px;
+    margin-bottom: 136px;
+  }
+
+  .about-me {
+    justify-content: center;
+    gap: 125px;
+    margin-bottom: 100px;
+    padding: 0 165px;
+    transform: translate(0);
+  }
+
+  .about-me img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .about-me article {
+    width: 550px;
+  }
+
+  h2 {
+    margin-bottom: 35px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .slider-btns {
+    margin-bottom: 100px;
+  }
+
+  button:hover {
+    background-color: #755cde;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin: 0 165px 56px;
+  }
+
+  .contact article {
+    width: 550px;
+  }
+
+  .contact h2,
+  .contact p {
+    text-align: left;
+  }
+
+  .contact h2 {
+    margin-bottom: 25px;
+  }
+
+  .contact p {
+    margin-bottom: 0;
+  }
+
+  .contact a {
+    margin: 0;
+  }
+
+  footer {
+    padding: 0 164px 64px 165px;
+  }
+}

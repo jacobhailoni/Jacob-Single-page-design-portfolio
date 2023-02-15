@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+
+    <title>Jacob | Single-page design portfolio</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="logo" />
+      <a href="#">Free Consultation</a>
+    </header>
+    <main>
+      <article class="hero">
+        <h1>Design solutions made easy</h1>
+
+        <p>
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+      </article>
+
+      <div class="grid">
+        <div class="graphic-design">
+          <p>Graphic Design</p>
+        </div>
+        <div class="ui-ux">
+          <p>UI/UX</p>
+        </div>
+        <div class="apps">
+          <p>Apps</p>
+        </div>
+        <div class="illustration">
+          <p>Illustrations</p>
+        </div>
+        <div class="photography">
+          <p>Photography</p>
+        </div>
+        <div class="motion">
+          <p>Motion Graphics</p>
+        </div>
+      </div>
+
+      <div class="about-me">
+        <img src="./assets/me.jpg" alt="me" />
+
+        <article>
+          <h2>I'm Jacob, and I'd love to work on your next project</h2>
+          <p>
+            I love working with others to create beautiful design solutions.
+            I've designed everything from brand illustrations to complete mobile
+            apps. I'm also handy with a camera!
+          </p>
+          <a href="#" class="orange-btn">Free Consultation</a>
+        </article>
+      </div>
+
+      <h3>My Work</h3>
+
+      <div class="image-carousel" id="carousel">
+        <img src="./assets/motion.jpg" class="picture" alt="slide1" />
+        <img src="./assets/graphic.jpg" class="picture" alt="slide2" />
+        <img src="./assets/motion.jpg" class="picture" alt="slide3" />
+        <img src="./assets/graphic.jpg" class="picture" alt="slide4" />
+        <img src="./assets/motion.jpg" class="picture" alt="slide5" />
+      </div>
+
+      <div class="slider-btns">
+        <button type="button" onclick="move(1)" aria-label="left arrow">
+          <img src="./assets/icon-arrow-left.svg" alt="" />
+        </button>
+        <button type="button" onclick="move(-1)" aria-label="right arrow">
+          <img src="./assets/icon-arrow-right.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="contact">
+        <article>
+          <h2>Book a call with me</h2>
+          <p>
+            I'd love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </article>
+        <a href="#" class="orange-btn">Free Consultation</a>
+      </div>
+    </main>
+    <footer>
+      <img src="./assets/logo.svg" alt="logo" />
+      <a href="#">Free Consultation</a>
+    </footer>
+  </body>
+</html>
